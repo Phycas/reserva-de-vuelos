@@ -1,5 +1,7 @@
-package Model;
+package com.vuelos.model;
 
+
+import java.sql.Time;
 import java.util.*;
 
 public class Vuelo {
@@ -17,7 +19,7 @@ public class Vuelo {
 
     private int destino_id; //aeropuerto
 
-    private TimeDate horario;
+    private Time horario;
 
     private boolean esItinerario;
 

@@ -1,5 +1,6 @@
-package Model;
+package com.vuelos.model;
 
+import java.sql.Date;
 import java.util.*;
 
 public class Usuario {
@@ -21,9 +22,9 @@ public class Usuario {
 
     private Set<Reserva> reservas; //reserva.usuario
 
-    private DateTime fechaNacimiento;
+    private Date fechaNacimiento;
 
-    private DateTime fecha_Registro;
+    private Date fecha_Registro;
 
     private boolean clienteFrecuente;
 

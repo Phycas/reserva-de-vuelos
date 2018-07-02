@@ -1,4 +1,4 @@
-package Model;
+package com.vuelos.model;
 
 import java.util.*;
 
