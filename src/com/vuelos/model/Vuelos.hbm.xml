@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 17-Jul-2018 15:04:22 by Hibernate Tools 5.1.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="vuelos" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.vuelos.model.Vuelos" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="vuelos">
+        <id name="id" type="int">
+            <column name="id"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="aerolineaId" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="aerolinea_id"/>
+        </property>
+        <property generated="never" lazy="false" name="avionId" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="avion_id"/>
+        </property>
+        <property generated="never" lazy="false" name="bolActivo" optimistic-lock="true" type="java.lang.Boolean" unique="false">
+            <column name="bol_activo"/>
+        </property>
+        <property generated="never" lazy="false" name="destinoId" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="destino_id"/>
+        </property>
+        <property generated="never" lazy="false" name="directo" optimistic-lock="true" type="java.lang.Boolean" unique="false">
+            <column name="directo"/>
+        </property>
+        <property generated="never" lazy="false" name="esItinerario" optimistic-lock="true" type="java.lang.Boolean" unique="false">
+            <column name="esItinerario"/>
+        </property>
+        <property generated="never" lazy="false" name="estadoVuelo" optimistic-lock="true" type="string" unique="false">
+            <column name="estadoVuelo"/>
+        </property>
+        <property generated="never" lazy="false" name="horario" optimistic-lock="true" type="time" unique="false">
+            <column length="8" name="horario"/>
+        </property>
+        <property generated="never" lazy="false" name="origenId" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="origen_id"/>
+        </property>
+        <property generated="never" lazy="false" name="reservaId" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="reserva_id"/>
+        </property>
+        <property generated="never" lazy="false" name="precio" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="precio"/>
+        </property>
+        <property generated="never" lazy="false" name="tipoVuelo" optimistic-lock="true" type="string" unique="false">
+            <column name="tipoVuelo"/>
+        </property>
+    </class>
+</hibernate-mapping>

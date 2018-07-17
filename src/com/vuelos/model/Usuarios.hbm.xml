@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 17-Jul-2018 15:04:22 by Hibernate Tools 5.1.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="vuelos" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.vuelos.model.Usuarios" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="usuarios">
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="bolActivo" optimistic-lock="true" type="boolean" unique="false">
+            <column name="bol_activo" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="clave" optimistic-lock="true" type="string" unique="false">
+            <column name="clave"/>
+        </property>
+        <property generated="never" lazy="false" name="clienteFrecuente" optimistic-lock="true" type="boolean" unique="false">
+            <column name="clienteFrecuente" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="fechaExpira" optimistic-lock="true" type="int" unique="false">
+            <column name="fechaExpira" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="fechaNacimiento" optimistic-lock="true" type="date" unique="false">
+            <column length="10" name="fechaNacimiento"/>
+        </property>
+        <property generated="never" lazy="false" name="fechaRegistro" optimistic-lock="true" type="date" unique="false">
+            <column length="10" name="fecha_Registro"/>
+        </property>
+        <property generated="never" lazy="false" name="nombre" optimistic-lock="true" type="string" unique="false">
+            <column name="nombre"/>
+        </property>
+        <property generated="never" lazy="false" name="rut" optimistic-lock="true" type="string" unique="false">
+            <column name="rut"/>
+        </property>
+        <property generated="never" lazy="false" name="tarjeta" optimistic-lock="true" type="int" unique="false">
+            <column name="tarjeta" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

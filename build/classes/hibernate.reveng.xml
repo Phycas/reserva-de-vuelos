@@ -2,5 +2,17 @@
 <!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-reverse-engineering-3.0.dtd" >
 
 <hibernate-reverse-engineering>
-  <table-filter match-catalog="vuelos" match-name="piloto"/>
+	<table-filter match-name="aerolineas" match-catalog="vuelos"></table-filter>
+	<table-filter match-name="aeropuertos" match-catalog="vuelos"></table-filter>
+	<table-filter match-name="asientos" match-catalog="vuelos"></table-filter>
+	<table-filter match-name="aviones" match-catalog="vuelos"></table-filter>
+	<table-filter match-name="ciudades" match-catalog="vuelos"></table-filter>
+	<table-filter match-name="estadovuelos" match-catalog="vuelos"></table-filter>
+	<table-filter match-name="itinerarios" match-catalog="vuelos"></table-filter>
+	<table-filter match-name="reservas" match-catalog="vuelos"></table-filter>
+	<table-filter match-name="tarifas" match-catalog="vuelos"></table-filter>
+	<table-filter match-name="tipoclase" match-catalog="vuelos"></table-filter>
+	<table-filter match-name="tipovuelo" match-catalog="vuelos"></table-filter>
+	<table-filter match-name="usuarios" match-catalog="vuelos"></table-filter>
+	<table-filter match-name="vuelos" match-catalog="vuelos"></table-filter>
 </hibernate-reverse-engineering>
