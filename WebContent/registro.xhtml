@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3c.org/1999/xhtml"
+   xmlns:h="http://java.sun.com/jsf/html"
+   xmlns:p="http://primefaces.org/ui">
+   <meta charset="UTF-8"></meta>
+<h:head>
+</h:head>
+<h:body>
+
+<b><i>This text is bold and italic</i></b>
+
+ <h:panelGroup>  
+        <h3>Registrar un nuevo usuario</h3>  
+        <h:form>  
+            <p>Nombre:  
+                <p:inputText value="#{usuarioBean.nusuario.nombre}" /></p>
+            <p>Clave:  
+                <p:inputText value="#{usuarioBean.nusuario.clave}" /></p>    
+           <p>Rut:  
+                <p:inputText value="#{usuarioBean.nusuario.rut}" /></p>  
+           <p>Fecha de Nacimiento:  
+                <p:inputText value="#{usuarioBean.nusuario.fechaNacimiento}" /></p>  
+           <p>Número de tarjeta de Crédito:  
+                <p:inputText value="#{usuarioBean.nusuario.tarjeta}" /></p>  
+           <p>Fecha de expiración de la tarjeta:  
+                <p:inputText value="#{usuarioBean.nusuario.fechaExpira}" /></p>  
+            <p>  
+                <p:commandButton icon="ui-icon-plusthick" type="submit" value="add" action="#{usuarioBean.registrarUsuario()}" /></p>  
+        </h:form>  
+    </h:panelGroup>  
+</h:body>
+</html>

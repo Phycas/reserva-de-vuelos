@@ -5,4 +5,28 @@
     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
     version="2.2">
 
+	<managed-bean>
+		<managed-bean-name>usuarioBean</managed-bean-name>
+		<managed-bean-class>com.vuelos.beans.UsuarioBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		 <managed-property>
+            <property-name>nusuario</property-name>
+            <property-class>com.vuelos.model.Usuario</property-class>
+            <value></value>
+        </managed-property>
+        
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>prueba1</managed-bean-name>
+		<managed-bean-class>pruebas.prueba</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>gaugeBean</managed-bean-name>
+		<managed-bean-class>pruebas.prueba</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+	</managed-bean>
+	
 </faces-config>

@@ -48,7 +48,7 @@ public class SuperGeneradorDeTablas {
    public static void main(String[] args) {
  
       
-       String configFileName = "hibernate-perros.cfg.xml";
+       String configFileName = "hibernate.cfg.xml";
  
        // cargar la configuración
        ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
